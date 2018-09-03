@@ -1,0 +1,25 @@
+{
+  "name": "@atomistics/pairwise-potential",
+  "version": "1.0.0",
+  "description": "Takes a pairwise function and returns a function that can calculate the energy from a set of 3D positions.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write index.js tests/*.js",
+    "lint": "prettier -l index.js tests/*.js",
+    "test": "node tests/test.js | tap-dot",
+    "generate-test-output": "node tests/generate.js > tests/test-output.json"
+  },
+  "keywords": [
+    "chemistry",
+    "atomistics",
+    "lennard-jones"
+  ],
+  "author": "Rye Terrell",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@atomistics/lennard-jones-pairwise-js": "^1.0.0",
+    "prettier": "^1.14.2",
+    "tape": "^4.9.1",
+    "tap-dot": "^2.0.0"
+  },
+}
